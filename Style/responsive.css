@@ -1,0 +1,85 @@
+/* *** First media Quary *** */
+/* ? Max Width = 1185 */
+@media (max-width: 1185px) {
+    nav.active {
+        width: 100%;
+        height: 100%;
+        background-color: #fff !important;
+        padding: 5rem 0rem;
+        display: block;
+    }
+    #menu {
+        display: none !important ;
+    }
+    nav.active #menu {
+        display: flex !important ;
+    }
+    nav.active .nav-wrapper {
+        flex-direction: column;
+    }
+
+    nav.active #logo {
+        align-self: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 2%;
+    }
+
+    nav.active img {
+        align-self: flex-start;
+        width: 20rem;
+    }
+
+    nav.active #menu {
+        margin-top: 8%;
+        flex-direction: column;
+        font-size: 5rem;
+        width: 100%;
+        margin-bottom: -2%;
+    }
+
+    nav.active #menu a {
+        font-size: 3rem !important;
+        border-bottom: 2px solid #111;
+        width: 100%;
+    }
+
+    nav #menu-icon {
+        display: block;
+    }
+
+    nav.active #menu-icon .menuOpen {
+        display: none;
+    }
+
+    nav.active #menu-icon .menuClose {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+
+    nav.active #button {
+        margin-top: 4rem;
+    }
+
+    nav.active #button button {
+        padding: 1.5rem 3rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
+
+/* ? Max Width = 520 */
+@media screen and (max-width: 520px) {
+    nav.active #menu a {
+            font-size: 2.5rem !important;
+            border-bottom: 2px solid #111;
+            width: 100%;
+
+        }
+    nav.active #menu {
+        margin-top: 15%;
+    }
+}
